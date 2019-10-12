@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
         }
         if (param == "-h" )  // 帮助
         {
-            LOG_I("main", "./cgf -l verbose|debug|info|warn|error|fatal")
+            LOG_I("main", "./cmf -l verbose|debug|info|warn|error|fatal")
         }
     }
 

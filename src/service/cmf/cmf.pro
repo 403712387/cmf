@@ -22,13 +22,13 @@ INCLUDEPATH += \
             ../../../thirdparty/include
 
 win32 {
-LIBS += -L../../bin/cgf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
+LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
         -L../../../thirdparty/lib/windows64/Qt -lQt5Core \
         -L../../../thirdparty/lib/windows64/jsoncpp  -ljsoncpp
 }
 
 unix {
-LIBS += -L../../bin/cgf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
+LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
         -L../../../thirdparty/lib/linux64/jsoncpp  -ljsoncpp \
         -L../../../thirdparty/lib/linux64/log4cplus -llog4cplus \
         -L../../../thirdparty/lib/linux64/curl -lcurl \

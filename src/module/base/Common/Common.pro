@@ -4,7 +4,7 @@ CONFIG += c++11
 
 TARGET = Common
 TEMPLATE = lib
-DESTDIR = ../../../bin/cgf/lib/module
+DESTDIR = ../../../bin/cmf/lib/module
 OBJECTS_DIR = ../../../output/Common
 MOC_DIR = ../../../output/Common
 QMAKE_LFLAGS += -fPIC

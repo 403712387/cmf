@@ -3,7 +3,7 @@ QT       -= gui
 CONFIG += c++11
 TARGET = HttpManager
 TEMPLATE = lib
-DESTDIR = ../../../bin/cgf/lib/module
+DESTDIR = ../../../bin/cmf/lib/module
 OBJECTS_DIR = ../../../output/HttpManager
 MOC_DIR = ../../../output/HttpManager
 #QMAKE_LFLAGS += -fPIC
@@ -20,14 +20,14 @@ INCLUDEPATH += ../Common/src \
             ../CoreModule/src
 
 win32 {
-LIBS += -L../../../bin/cgf/lib/module -lCommon -lCoreModule -lCommon \
+LIBS += -L../../../bin/cmf/lib/module -lCommon -lCoreModule -lCommon \
         -L../../../../thirdparty/lib/windows64/Qt -lQt5Core \
         -L../../../../thirdparty/lib/windows64/libmicrohttpd -llibmicrohttpd-dll \
         -L../../../../thirdparty/lib/windows64/jsoncpp -ljsoncpp
 }
 
 unix {
-LIBS += -L../../../bin/cgf/lib/module -lCommon -lCoreModule -lCommon \
+LIBS += -L../../../bin/cmf/lib/module -lCommon -lCoreModule -lCommon \
         -L../../../../thirdparty/lib/linux64/Qt -lQt5Core \
         #-L../../../../thirdparty/lib/linux64/gperftools/static -lprofiler -ltcmalloc \
         -L../../../../thirdparty/lib/linux64/libmicrohttpd  -lmicrohttpd \
