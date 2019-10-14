@@ -9,7 +9,7 @@
 #include "jsoncpp/json.h"
 
 // 速度统计列表（一般用来统计某个模块的处理速度）
-class CGF_EXPORT SpeedStatisticList
+class CMF_EXPORT SpeedStatisticList
 {
 public:
     SpeedStatisticList();

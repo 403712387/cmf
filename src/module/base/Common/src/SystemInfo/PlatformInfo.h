@@ -6,7 +6,7 @@
  * 平台信息
 */
 class SystemInfo;
-class PlatformInfo
+class CMF_EXPORT PlatformInfo
 {
     friend class SystemInfo;
 public:

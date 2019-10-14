@@ -3,9 +3,9 @@
 #include "Common.h"
 #include "MessageRoute.h"
 #include "BaseProcess.h"
-#include "HttpManager.h"
-#include "ConfigureManager.h"
-#include "ServiceStatusManager.h"
+#include "HttpModule.h"
+#include "ConfigureModule.h"
+#include "ServiceStatusModule.h"
 
 int main(int argc, char *argv[])
 {
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 
     // 启动各个模块
     MessageRoute messageRoute;
-    ConfigureManager configureManager(&messageRoute);
-    HttpManager httpManager(&messageRoute);
-    ServiceStatusManager serviceStatusManager(&messageRoute);
+    ConfigureModule configureManager(&messageRoute);
+    HttpModule httpManager(&messageRoute);
+    ServiceStatusModule serviceStatusManager(&messageRoute);
     messageRoute.beginWork();
 
     LOG_I("main", "********************Bye********************");

@@ -7,7 +7,7 @@
 */
 
 class SystemInfo;
-class CGF_EXPORT ProcessStatistic
+class CMF_EXPORT ProcessStatistic
 {
     friend class SystemInfo;
 public:

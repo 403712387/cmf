@@ -8,7 +8,7 @@
  * 线程的worker
 */
 class Thread;
-class CGF_EXPORT ThreadHandler
+class CMF_EXPORT ThreadHandler
 {
     friend class Thread;
 public:

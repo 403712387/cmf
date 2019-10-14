@@ -16,6 +16,9 @@ std::string PerfTool::mHeapProfilerFile = "./html/perf/heap.prof";
 // 开始性能检测
 std::string PerfTool::startCPUProfiler()
 {
+#ifdef WIN32
+    return "";
+#else
     // 判断是不是已经开启
     if (true == mCpuProfiler)
     {
@@ -30,11 +33,15 @@ std::string PerfTool::startCPUProfiler()
     LOG_I(mClassName, "start cpu prifiler, file:" << mCpuProfilerFile);
     ProfilerStart(mCpuProfilerFile.c_str());
     return mCpuProfilerFile;
+#endif
 }
 
 // 停止性能检测
 std::string PerfTool::stopCPUProfiler()
 {
+#ifdef WIN32
+    return "";
+#else
     if (false == mCpuProfiler)
     {
         return "";
@@ -43,11 +50,15 @@ std::string PerfTool::stopCPUProfiler()
     LOG_I(mClassName, "stop cpu prifiler");
     ProfilerStop();
     return mCpuProfilerFile;
+#endif
 }
 
 // 开始分析堆栈
 std::string PerfTool::startHeapProfiler()
 {
+#ifdef WIN32
+    return "";
+#else
     // 判断是不是已经开启
     if (true == mHeapProfiler)
     {
@@ -62,11 +73,15 @@ std::string PerfTool::startHeapProfiler()
     LOG_I(mClassName, "start heap prifiler, file:" << mHeapProfilerFile);
     HeapProfilerStart(mHeapProfilerFile.c_str());
     return mHeapProfilerFile;
+#endif
 }
 
 // 停止堆栈分析
 std::string PerfTool::stopHeapProfiler()
 {
+#ifdef WIN32
+    return "";
+#else
     if (false == mHeapProfiler)
     {
         return "";
@@ -75,4 +90,5 @@ std::string PerfTool::stopHeapProfiler()
     LOG_I(mClassName, "stop heap prifiler");
     HeapProfilerStop();
     return mHeapProfilerFile;
+#endif
 }

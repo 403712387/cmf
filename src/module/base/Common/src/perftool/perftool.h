@@ -8,16 +8,16 @@ class PerfTool
 public:
 
     // 开始性能检测
-    static std::string CGF_EXPORT startCPUProfiler();
+    static std::string CMF_EXPORT startCPUProfiler();
 
     // 停止性能检测
-    static std::string CGF_EXPORT stopCPUProfiler();
+    static std::string CMF_EXPORT stopCPUProfiler();
 
     // 开始分析堆栈
-    static std::string CGF_EXPORT startHeapProfiler();
+    static std::string CMF_EXPORT startHeapProfiler();
 
     // 停止堆栈分析
-    static std::string CGF_EXPORT stopHeapProfiler();
+    static std::string CMF_EXPORT stopHeapProfiler();
 
 private:
     static std::string  mClassName;

@@ -6,7 +6,7 @@
 /*
  * 控制服务的消息
 */
-class CGF_EXPORT  ServiceControlMessage : public BaseMessage
+class CMF_EXPORT  ServiceControlMessage : public BaseMessage
 {
 public:
     ServiceControlMessage(ServiceOperateType controlType = Operate_Exit, MessageTransType transType = Async_Trans_Message,

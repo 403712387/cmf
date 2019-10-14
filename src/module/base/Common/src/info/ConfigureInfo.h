@@ -7,7 +7,7 @@
 /*
  * 配置信息
 */
-class CGF_EXPORT ConfigureInfo
+class CMF_EXPORT ConfigureInfo
 {
 public:
 

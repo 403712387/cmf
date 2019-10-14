@@ -9,7 +9,7 @@
  * 封装的公共线程类
 */
 class ThreadHandler;
-class CGF_EXPORT Thread
+class CMF_EXPORT Thread
 {
 public:
     Thread(ThreadHandler *handler);

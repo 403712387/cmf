@@ -9,7 +9,7 @@
 class BaseProcess;
 
 // 消息路由类，用来转发消息
-class CGF_EXPORT MessageRoute
+class CMF_EXPORT MessageRoute
 {
 public:
     // 模块注册

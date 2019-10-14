@@ -6,7 +6,7 @@
  * 服务的状态消息
 */
 class ServiceStatusInfo;
-class CGF_EXPORT  GetServiceStatusMessage : public BaseMessage
+class CMF_EXPORT  GetServiceStatusMessage : public BaseMessage
 {
 public:
     GetServiceStatusMessage(MessageTransType transType = Async_Trans_Message,
@@ -18,7 +18,7 @@ public:
 /*
  * 服务状态的回应
  */
-class CGF_EXPORT GetServiceStatusResponse : public BaseResponse
+class CMF_EXPORT GetServiceStatusResponse : public BaseResponse
 {
 public:
     GetServiceStatusResponse(std::shared_ptr<ServiceStatusInfo> info, std::shared_ptr<BaseMessage> message, std::shared_ptr<Error> error);

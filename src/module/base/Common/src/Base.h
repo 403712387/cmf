@@ -2,9 +2,9 @@
 #define BASE_H
 
 #ifdef WIN32
-#define CGF_EXPORT __declspec(dllexport)
+#define CMF_EXPORT __declspec(dllexport)
 #else
-#define CGF_EXPORT
+#define CMF_EXPORT
 #endif
 
 #endif

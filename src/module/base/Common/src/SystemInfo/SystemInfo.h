@@ -11,7 +11,7 @@ class CPUStatistic;
 class DiskStatistic;
 class MemoryStatistic;
 class ProcessStatistic;
-class CGF_EXPORT SystemInfo
+class CMF_EXPORT SystemInfo
 {
 public:
     // 统计cpu的使用信息

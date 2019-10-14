@@ -5,7 +5,7 @@
 #include "BaseMessage.h"
 
 // 可以等待的消息，主要用在算法模块（把数据丢进去之后等待回应）
-class CGF_EXPORT BaseWaitMessage : public BaseMessage
+class CMF_EXPORT BaseWaitMessage : public BaseMessage
 {
 public:
     BaseWaitMessage(MessageType type, MessageTransType transType = Async_Trans_Message,

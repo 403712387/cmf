@@ -47,7 +47,7 @@ enum PriorityType
 };
 
 // 消息和消息回应的类都从此类中继承
-class CGF_EXPORT BaseClass
+class CMF_EXPORT BaseClass
 {
 public:
     BaseClass(ClassType type);
@@ -74,7 +74,7 @@ private:
 };
 
 //  基础消息，不能被实例化
-class CGF_EXPORT BaseMessage : public BaseClass
+class CMF_EXPORT BaseMessage : public BaseClass
 {
 public:
     BaseMessage(MessageType type, MessageTransType transType = Async_Trans_Message, 
@@ -123,7 +123,7 @@ protected:
 };
 
 // 基础消息的回应
-class CGF_EXPORT BaseResponse : public BaseClass
+class CMF_EXPORT BaseResponse : public BaseClass
 {
 public:
     BaseResponse(std::shared_ptr<BaseMessage> message, std::shared_ptr<Error> error);

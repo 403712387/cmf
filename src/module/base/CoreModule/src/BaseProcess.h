@@ -14,7 +14,7 @@
  * 注意，此类现阶段只提供了订阅消息的接口，没有取消订阅的接口
 */
 class MessageRoute;
-class CGF_EXPORT BaseProcess : public std::enable_shared_from_this<BaseProcess>
+class CMF_EXPORT BaseProcess : public std::enable_shared_from_this<BaseProcess>
 {
     friend class MessageRoute;
 public:

@@ -10,7 +10,7 @@
 
 //普通队列
 template <typename T>
-class CGF_EXPORT Queue
+class CMF_EXPORT Queue
 {
 public:
 

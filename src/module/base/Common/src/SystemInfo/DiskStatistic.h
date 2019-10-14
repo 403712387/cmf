@@ -6,7 +6,7 @@
  * 统计磁盘的使用情况
 */
 class SystemInfo;
-class CGF_EXPORT DiskStatistic
+class CMF_EXPORT DiskStatistic
 {
     friend class SystemInfo;
 public:

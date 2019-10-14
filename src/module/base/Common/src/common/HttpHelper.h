@@ -6,7 +6,7 @@
 #include <condition_variable>
 #include "Base.h"
 
-class CGF_EXPORT HttpHelper
+class CMF_EXPORT HttpHelper
 {
 public:
 

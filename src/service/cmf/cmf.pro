@@ -16,19 +16,19 @@ INCLUDEPATH += \
             ../../module/base/Common/src/info \
             ../../module/base/Common/src/common \
             ../../module/base/CoreModule/src \
-            ../../module/base/HttpManager/src \
-            ../../module/base/ServiceStatusManager/src \
-            ../../module/base/ConfigureManager/src \
+            ../../module/base/HttpModule/src \
+            ../../module/base/ServiceStatusModule/src \
+            ../../module/base/ConfigureModule/src \
             ../../../thirdparty/include
 
 win32 {
-LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
+LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpModule -lServiceStatusModule -lConfigureModule \
         -L../../../thirdparty/lib/windows64/Qt -lQt5Core \
         -L../../../thirdparty/lib/windows64/jsoncpp  -ljsoncpp
 }
 
 unix {
-LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpManager -lServiceStatusManager -lConfigureManager \
+LIBS += -L../../bin/cmf/lib/module -lCommon -lCoreModule -lHttpModule -lServiceStatusModule -lConfigureModule \
         -L../../../thirdparty/lib/linux64/jsoncpp  -ljsoncpp \
         -L../../../thirdparty/lib/linux64/log4cplus -llog4cplus \
         -L../../../thirdparty/lib/linux64/curl -lcurl \

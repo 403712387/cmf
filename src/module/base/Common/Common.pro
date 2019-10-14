@@ -7,7 +7,6 @@ TEMPLATE = lib
 DESTDIR = ../../../bin/cmf/lib/module
 OBJECTS_DIR = ../../../output/Common
 MOC_DIR = ../../../output/Common
-QMAKE_LFLAGS += -fPIC
 
 INCLUDEPATH += ../../../../thirdparty/include \
             ../../../../thirdparty/include/Qt \
@@ -26,7 +25,7 @@ win32 {
 LIBS += -L../../../../thirdparty/lib/windows64/curl -llibcurl \
         -L../../../../thirdparty/lib/windows64/Qt -lQt5Core \
         -L../../../../thirdparty/lib/windows64/log4cplus -llog4cplusU \
-        -L../../../../thirdparty/lib/windows64/gperftools -laddressmap_unittest -llibtcmalloc_minimal -llow_level_alloc_unittest \
+        #-L../../../../thirdparty/lib/windows64/gperftools -laddressmap_unittest -llibtcmalloc_minimal -llow_level_alloc_unittest \
         -L../../../../thirdparty/lib/windows64/jsoncpp -ljsoncpp
 }
 
@@ -46,12 +45,7 @@ HEADERS += \
     src/log/*.h \
     src/thread/*.h \
     src/perftool/*.h \
-    src/SystemInfo/SystemInfo.h \
-    src/SystemInfo/CPUStatistic.h \
-    src/SystemInfo/ProcessStatistic.h \
-    src/SystemInfo/DiskStatistic.h \
-    src/SystemInfo/MemoryStatistic.h \
-    src/SystemInfo/PlatformInfo.h
+    src/SystemInfo/*.h
 
 SOURCES += \
     src/*.cpp \
@@ -61,10 +55,4 @@ SOURCES += \
     src/log/*.cpp \
     src/thread/*.cpp \
     src/perftool/*.cpp \
-    src/SystemInfo/SystemInfo.cpp \
-    src/SystemInfo/CPUStatistic.cpp \
-    src/SystemInfo/ProcessStatistic.cpp \
-    src/SystemInfo/DiskStatistic.cpp \
-    src/SystemInfo/MemoryStatistic.cpp \
-    src/SystemInfo/PlatformInfo.cpp
-
+    src/SystemInfo/*.cpp

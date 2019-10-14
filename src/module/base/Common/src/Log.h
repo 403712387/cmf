@@ -33,19 +33,19 @@ namespace common_log
 	};
 
 	// 设置日志的配置文件，如果不设置，则使用默认配
-    CGF_EXPORT void setLogConfigFile(const std::string fileConfig);
+    CMF_EXPORT void setLogConfigFile(const std::string fileConfig);
 
 	// 设置日志级别
-    CGF_EXPORT void setLogLevel(Log_Level logLevel);
+    CMF_EXPORT void setLogLevel(Log_Level logLevel);
 
     // 获取日志级别
-    CGF_EXPORT Log_Level getLogLevel();
+    CMF_EXPORT Log_Level getLogLevel();
 
 	// 设置过滤关键
-    CGF_EXPORT void setFilterWord(const std::string keyWord);
+    CMF_EXPORT void setFilterWord(const std::string keyWord);
 
     // 写日志(forceWrite如果为true,无论日志级别，强制写入)
-    CGF_EXPORT void writeLog(const std::string &info, Log_Level logLevel = Log_Level_Info, bool forceWrite = false);
+    CMF_EXPORT void writeLog(const std::string &info, Log_Level logLevel = Log_Level_Info, bool forceWrite = false);
 }
 
 #endif

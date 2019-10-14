@@ -6,7 +6,7 @@
  * 统计内存使用情况
 */
 class SystemInfo;
-class CGF_EXPORT MemoryStatistic
+class CMF_EXPORT MemoryStatistic
 {
     friend class SystemInfo;
 public:

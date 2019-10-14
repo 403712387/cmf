@@ -10,7 +10,7 @@
  * 服务的状态信息
 */
 class SpeedStatisticList;
-class CGF_EXPORT ServiceStatusInfo
+class CMF_EXPORT ServiceStatusInfo
 {
 public:
     // 启动时间

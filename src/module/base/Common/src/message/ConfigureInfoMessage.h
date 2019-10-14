@@ -6,7 +6,7 @@
  * 配置信息的消息
 */
 class ConfigureInfo;
-class CGF_EXPORT  ConfigureInfoMessage : public BaseMessage
+class CMF_EXPORT  ConfigureInfoMessage : public BaseMessage
 {
 public:
     ConfigureInfoMessage(std::shared_ptr<ConfigureInfo> info, MessageTransType transType = Async_Trans_Message,

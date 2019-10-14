@@ -13,7 +13,7 @@
 
 //优先级队列
 template <typename T>
-class CGF_EXPORT PriorityQueue
+class CMF_EXPORT PriorityQueue
 {
 public:
 

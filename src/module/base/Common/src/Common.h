@@ -32,55 +32,55 @@ enum HttpBodyType
 namespace Common
 {
     // 根据字符串获取日志级别
-    CGF_EXPORT common_log::Log_Level getLogLevelFromString(std::string level);
+    CMF_EXPORT common_log::Log_Level getLogLevelFromString(std::string level);
 
     // 获取日志级别的字符串
-    CGF_EXPORT std::string getLogLevelName(common_log::Log_Level level);
+    CMF_EXPORT std::string getLogLevelName(common_log::Log_Level level);
 
     // 获取服务控制类型的字符串
-    CGF_EXPORT std::string getServiceOperateTypeName(ServiceOperateType type);
+    CMF_EXPORT std::string getServiceOperateTypeName(ServiceOperateType type);
 
     // 设置线程名字
-    CGF_EXPORT void setThreadName(std::string name);
+    CMF_EXPORT void setThreadName(std::string name);
 
     // 生成一个唯一的ID
-    CGF_EXPORT long long getUniqueId();
+    CMF_EXPORT long long getUniqueId();
 
     // 生成一个sequence ID(sequence ID是从0开始自增的，Unique ID不是)
-    CGF_EXPORT long long getSequenceId();
+    CMF_EXPORT long long getSequenceId();
 
     // 获取端口的名字
-    CGF_EXPORT std::string getPortTypeName(PortType type);
+    CMF_EXPORT std::string getPortTypeName(PortType type);
 
     // 获取目录下的所有文件
-    CGF_EXPORT std::vector<std::string> getFilesInDirectory(std::string directory);
+    CMF_EXPORT std::vector<std::string> getFilesInDirectory(std::string directory);
 
     // 获取目录下的一个文件
-    CGF_EXPORT std::string getFileInDirectory(std::string directory);
+    CMF_EXPORT std::string getFileInDirectory(std::string directory);
 
     // 数据写入文件
-    CGF_EXPORT bool writeFile(std::string fileName, std::string &fileData);
+    CMF_EXPORT bool writeFile(std::string fileName, std::string &fileData);
 
     // 读文件
-    CGF_EXPORT std::string readFile(std::string fileName);
+    CMF_EXPORT std::string readFile(std::string fileName);
 
     // 获取易读的容量(比如，1.2G，100.7P这种)
-    CGF_EXPORT std::string getReadableCapacitySize(long long bytes);
+    CMF_EXPORT std::string getReadableCapacitySize(long long bytes);
 
     // 获取http body tpye的字符串
-    CGF_EXPORT std::string getHttpTypeName(HttpBodyType type);
+    CMF_EXPORT std::string getHttpTypeName(HttpBodyType type);
 
     // 创建目录
-    CGF_EXPORT bool createPath(std::string path);
+    CMF_EXPORT bool createPath(std::string path);
 
     // 获取Error信息
-    CGF_EXPORT std::shared_ptr<Error> getError(std::string reason, long long code = 0);
+    CMF_EXPORT std::shared_ptr<Error> getError(std::string reason, long long code = 0);
 
     // 没有错误
-    CGF_EXPORT std::shared_ptr<Error> noError();
+    CMF_EXPORT std::shared_ptr<Error> noError();
 
     // 判断是否为有效的url
-    CGF_EXPORT bool isValidUrl(std::string url);
+    CMF_EXPORT bool isValidUrl(std::string url);
 }
 
 #endif

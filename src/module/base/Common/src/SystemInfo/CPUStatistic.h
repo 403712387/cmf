@@ -4,7 +4,7 @@
 #include "jsoncpp/json.h"
 
 class SystemInfo;
-class CGF_EXPORT CPUStatistic
+class CMF_EXPORT CPUStatistic
 {
     friend class SystemInfo;
 public:
