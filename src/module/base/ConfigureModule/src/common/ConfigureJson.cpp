@@ -29,7 +29,7 @@ bool ConfigureJson::loadConfigure()
         return false;
     }
 
-    std::string cgfService = "cgf_service";
+    std::string cgfService = "cmf_service";
     if (readerRoot.isMember(cgfService))
     {
         // http port
